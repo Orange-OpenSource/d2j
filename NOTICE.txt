@@ -1,0 +1,7 @@
+This software makes use of the following libraries:
+
+Soot 2.5
+http://www.sable.mcgill.ca/soot/
+Copyright (c) 1997-2014 McGill University
+License LGPL Version 2.1
+
