@@ -123,13 +123,10 @@ public class APKTest {
 	@Parameters(name="{index}:{0}")
 	public static List <Object []> filenames() {
 		List <Object []> result = new ArrayList <Object []> ();
-		String folder_base = APK.getAbsolutePath();
-		for(String folder: folder_base.split(":")) {
-			File [] allFiles = new File(folder).listFiles(new APKFilter());
-			if(allFiles == null) continue; 
-			Arrays.sort(allFiles);
-			for(int i=0; i < allFiles.length; i++) result.add(new Object[]{ allFiles[i] });
-		}
+		File [] allFiles = APK.listFiles(new APKFilter());
+	    if(allFiles == null) return result; 
+		Arrays.sort(allFiles);
+		for(int i=0; i < allFiles.length; i++) result.add(new Object[]{ allFiles[i] });
 		return result;
 	}
 
