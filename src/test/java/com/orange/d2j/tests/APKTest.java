@@ -154,7 +154,7 @@ public class APKTest {
 
 			InputStream is = null;
 			apkFile = new ZipFile(filename);
-			String classPath = CLASSPATH + ":" + tempDir.getAbsolutePath();
+			String classPath = CLASSPATH + File.pathSeparator + tempDir.getAbsolutePath();
 			G.reset();
 			String [] sootArgs = new String [ CommonSootArgs.length + 4 ];
 			int pos = 0;
