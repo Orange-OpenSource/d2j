@@ -1105,7 +1105,7 @@ public class DexFile extends BasicDexFile {
                 is = new FileInputStream(filename);
             try {
                 Scene.v().setSootClassPath(
-                        ".:" + System.getProperty("user.home") + "/Android/android.jar:");
+                        "." + File.pathSeparator + new File(new File(System.getProperty("user.home"), "Android"), "android.jar") + File.pathSeparator);
                 DexFile df = new DexFile();
                 df.parse(is);
             } finally {
