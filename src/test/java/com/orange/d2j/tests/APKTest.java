@@ -71,9 +71,9 @@ import com.orange.d2j.manifest.ManifestContentHandler;
 @RunWith(Parameterized.class)
 public class APKTest {
 	
-    private static final String BASE = "src/test/cases";
-	private static final String CLASSPATH = BASE + "/android.jar";
-	private static final String APK = BASE + "/apk";
+    private static final File BASE = new File(new File(new File("src"),"test"),"cases");
+	private static final File CLASSPATH = new File(BASE , "android.jar");
+	private static final File APK = new File(BASE,"apk");
 
 	/**
 	 * Contains all the results found so far (memoization between "tests").
@@ -123,7 +123,7 @@ public class APKTest {
 	@Parameters(name="{index}:{0}")
 	public static List <Object []> filenames() {
 		List <Object []> result = new ArrayList <Object []> ();
-		String folder_base = APK;
+		String folder_base = APK.getAbsolutePath();
 		for(String folder: folder_base.split(":")) {
 			File [] allFiles = new File(folder).listFiles(new APKFilter());
 			if(allFiles == null) continue; 

@@ -48,10 +48,10 @@ import com.orange.d2j.Hierarchy;
  */
 @RunWith(Parameterized.class)
 public class ShallowAPKTest {
-	
-    private static final String BASE = "src/test/cases";
-    private static final String APK = BASE + "/apk";
-    
+
+    private static final File BASE = new File(new File(new File("src"),"test"),"cases");
+	private static final File APK = new File(BASE,"apk");
+	   
 
 	/**
 	 * Only keeps test ending with .apk.
@@ -70,12 +70,14 @@ public class ShallowAPKTest {
 	@Parameters(name="{index}:{0}")
 	public static List <Object []> filenames() {
 		List <Object []> result = new ArrayList <Object []> ();
-		for(String folder: APK.split(":")) {
-			File [] allFiles = new File(folder).listFiles(new APKFilter());
-			if(allFiles == null) continue;
-			Arrays.sort(allFiles);
-			for(int i=0; i < allFiles.length; i++) result.add(new Object[]{ allFiles[i] });
-		}
+
+		File[] allFiles = APK.listFiles(new APKFilter());
+		if (allFiles == null)
+			return result;
+		Arrays.sort(allFiles);
+		for (int i = 0; i < allFiles.length; i++)
+			result.add(new Object[] { allFiles[i] });
+		
 		return result;
 	}
 

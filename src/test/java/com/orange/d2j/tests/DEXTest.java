@@ -60,10 +60,12 @@ import com.orange.d2j.DexFile;
  */
 @RunWith(Parameterized.class)
 public class DEXTest {
-    private static final String BASE = "src/test/cases";
-    private static final String DEX = BASE + "/dex";
-    private static final String XML = BASE + "/xml";
-    private static final String CLASSPATH = BASE + "/android.jar";
+	
+	
+    private static final File BASE = new File(new File(new File("src"),"test"),"cases");
+	private static final File CLASSPATH = new File(BASE , "android.jar");
+	private static final File DEX =  new File(BASE,"dex");
+    private static final File XML = new File(BASE,"xml");
     
 	/**
 	 * Only keeps test ending with .dex. Necessary because of .svn folder.
@@ -81,7 +83,7 @@ public class DEXTest {
 	 */
 	@Parameters(name="{index}:{0}")
 	public static List <Object []> filenames() {
-		File [] allFiles = new File(DEX).listFiles(new DexFilter());
+		File [] allFiles = DEX.listFiles(new DexFilter());
 		Arrays.sort(allFiles);
 		int l = allFiles.length;
 		Object [] [] result = new Object [l] [1];
@@ -106,7 +108,7 @@ public class DEXTest {
         G.reset();
         InputStream is = new FileInputStream(filename);
         try {
-            Scene.v().setSootClassPath(CLASSPATH);
+            Scene.v().setSootClassPath(CLASSPATH.getAbsolutePath());
             Scene.v().loadBasicClasses();
             DexFile df = new DexFile();
             df.parse(is);
