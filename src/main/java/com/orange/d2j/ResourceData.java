@@ -33,14 +33,14 @@ package com.orange.d2j;
 
 /**
  * Codes data found in compiled XML resource files.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class ResourceData {
 	
 	/**
 	 * Coding of colors.
-	 * @author piac6784
+	 * @author Pierre Cregut
 	 *
 	 */
 	public static class Color {
@@ -162,7 +162,7 @@ public class ResourceData {
     /**
      * The Class Reference.
      *
-     * @author piac6784
+     * @author Pierre Cregut
      * A reference to a resource entry
      */
     public static class Reference {
@@ -190,7 +190,7 @@ public class ResourceData {
     /**
      * The Class Attribute.
      *
-     * @author piac6784
+     * @author Pierre Cregut
      * An attribute in the current them style
      */
     public static class Attribute {
@@ -216,7 +216,7 @@ public class ResourceData {
     }
     /**
      * Represent dimensions data value.
-     * @author piac6784
+     * @author Pierre Cregut
      *
      */
     public static class Dimension {
@@ -275,7 +275,7 @@ public class ResourceData {
     /**
      * Represent fraction data values.
      *
-     * @author piac6784
+     * @author Pierre Cregut
      */
     public static class Fraction {
     	/**

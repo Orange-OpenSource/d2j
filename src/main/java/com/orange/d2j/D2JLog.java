@@ -35,7 +35,7 @@ import java.util.logging.Logger;
 /**
  * Utility class maintaining a logger for the D2J library. It also maintain a set
  * of boolean variables used to determin if something must be logged or not.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class D2JLog {

@@ -44,7 +44,7 @@ import java.util.zip.ZipInputStream;
  * This class provides an entry point for APK read directly as input stream. It memoize the classes and manifest so that they can be
  * accessed later.
  * 
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class APKStream extends APKFile {

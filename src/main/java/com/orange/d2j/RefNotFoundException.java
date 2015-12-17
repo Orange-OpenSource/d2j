@@ -32,7 +32,7 @@ package com.orange.d2j;
 
 /**
  * A reference to an element not found is the classpath has been found.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class RefNotFoundException extends Exception {

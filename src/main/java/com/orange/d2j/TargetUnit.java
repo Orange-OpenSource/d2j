@@ -37,7 +37,7 @@ import soot.jimple.internal.AbstractStmt;
 /**
  * A placeholder statement for the target of a jump. It is then replaced with the correct statement
  * coresponding to the offset in the DEX file.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 

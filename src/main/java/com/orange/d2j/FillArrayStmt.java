@@ -42,7 +42,7 @@ import soot.util.Switch;
 /**
  * Dummy instruction that must be expanded during the generation of the actual code.
  * It is used to represent Dalvick filled-new-array instructions.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 @SuppressWarnings("unchecked")

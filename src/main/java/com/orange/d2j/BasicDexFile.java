@@ -35,7 +35,7 @@ import java.io.InputStream;
 
 /**
  * Reads the basic structure of a DEX file and builds a representation of this file.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 

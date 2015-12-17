@@ -96,7 +96,7 @@ import soot.toolkits.exceptions.UnitThrowAnalysis;
 /**
  * Reads a DEX file and builds a representation of this file.
  * 
- * @author piac6784
+ * @author Pierre Cregut
  */
 public class DexFile extends BasicDexFile {
     /*
@@ -1105,7 +1105,7 @@ public class DexFile extends BasicDexFile {
                 is = new FileInputStream(filename);
             try {
                 Scene.v().setSootClassPath(
-                        "." + File.pathSeparator + new File(new File(System.getProperty("user.home"), "Android"), "android.jar") + File.pathSeparator);
+                        "." + File.pathSeparator + new File(new File(System.getProperty("user.home"), "Android"), "android.jar").getAbsolutePath() + File.pathSeparator);
                 DexFile df = new DexFile();
                 df.parse(is);
             } finally {

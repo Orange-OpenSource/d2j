@@ -25,7 +25,7 @@ package com.orange.d2j.manifest;
  */
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Three state boolean
  */
 public enum TSBoolean {

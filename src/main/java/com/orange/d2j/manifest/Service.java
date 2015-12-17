@@ -33,7 +33,7 @@ package com.orange.d2j.manifest;
 import org.xml.sax.Attributes;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Abstraction of a service
  */
 public class Service extends Component {

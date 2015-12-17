@@ -35,7 +35,7 @@ import java.util.Set;
 
 /**
  * Representation for an intent filter.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class Filter {

@@ -43,7 +43,7 @@ import com.orange.d2j.Hierarchy;
 
 /**
  * A parameterized JUnit test that checks how a set of APK are parsed (only at the structure level).
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 @RunWith(Parameterized.class)

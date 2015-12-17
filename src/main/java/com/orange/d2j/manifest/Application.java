@@ -33,7 +33,7 @@ package com.orange.d2j.manifest;
 import org.xml.sax.Attributes;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Representation of the applicatin declared in the manifest
  */
 public class Application {

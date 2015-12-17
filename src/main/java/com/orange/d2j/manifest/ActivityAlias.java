@@ -33,7 +33,7 @@ package com.orange.d2j.manifest;
 import org.xml.sax.Attributes;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Abstraction of an alias activity in manifest.
  */
 public class ActivityAlias extends Component {

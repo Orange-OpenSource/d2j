@@ -35,7 +35,7 @@ import org.xml.sax.Attributes;
 /**
  * The Class Instrumentation.
  *
- * @author piac6784
+ * @author Pierre Cregut
  * Represents instrumentation information on an APK
  */
 public class Instrumentation {

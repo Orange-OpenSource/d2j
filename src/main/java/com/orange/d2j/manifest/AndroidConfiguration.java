@@ -34,7 +34,7 @@ import com.orange.d2j.D2JLog;
 
 /**
  * A configuration describes the input/output hardware required.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class AndroidConfiguration {

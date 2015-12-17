@@ -51,7 +51,7 @@ import soot.SootMethodRef;
 /**
  * Utility function to handle an Android packaged application (or APK).
  * 
- * @author piac6784
+ * @author Pierre Cregut
  */
 public class APKFile {
 

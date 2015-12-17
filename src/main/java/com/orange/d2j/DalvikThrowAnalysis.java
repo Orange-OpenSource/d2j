@@ -54,7 +54,7 @@ import soot.toolkits.exceptions.ThrowableSet;
  * the case if another analysis can check that the entermonitor exitmonitor are well paired.
  * This means that looking at the CFG reduced to entermonitor exitmonitor as a regexp, there is no unbalanced
  * word especially under a loop (star word). This analysis should be implemented.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class DalvikThrowAnalysis implements ThrowAnalysis {

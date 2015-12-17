@@ -55,7 +55,7 @@ import com.orange.d2j.DexFile;
 
 /**
  * A parameterized JUnit test that checks how a set of dex files are compiled.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 @RunWith(Parameterized.class)
@@ -69,7 +69,7 @@ public class DEXTest {
     
 	/**
 	 * Only keeps test ending with .dex. Necessary because of .svn folder.
-	 * @author piac6784
+	 * @author Pierre Cregut
 	 *
 	 */
 	private static class DexFilter implements FileFilter {

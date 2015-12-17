@@ -48,7 +48,7 @@ import soot.Modifier;
  * Represents the class hierarchy associated to the classes declared in a Dex
  * file
  * 
- * @author piac6784
+ * @author Pierre Cregut
  */
 public class Hierarchy extends BasicDexFile {
     private String[] classes;

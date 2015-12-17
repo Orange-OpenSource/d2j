@@ -57,7 +57,7 @@ import soot.toolkits.scalar.SmartLocalDefs;
  * It finds the variables that may be involved in a type weakening. It
  * introduces auxiliary variables that act as a buffer between the definitions
  * and the common use. 
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class TypeDecoupler {
@@ -82,7 +82,7 @@ public class TypeDecoupler {
 	
 	/**
 	 * Description of a local for which we need to insert decoupling assingments.
-	 * @author piac6784
+	 * @author Pierre Cregut
 	 *
 	 */
 	public static class ToInsert {

@@ -61,11 +61,11 @@ import com.orange.d2j.manifest.ManifestContentHandler;
 
 /**
  * A parameterized JUnit test that checks how a set of dex files are compiled.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 /**
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 @RunWith(Parameterized.class)
@@ -107,7 +107,7 @@ public class APKTest {
 	
 	/**
 	 * Only keeps true android applications ending with .apk. 
-	 * @author piac6784
+	 * @author Pierre Cregut
 	 *
 	 */
 	private static class APKFilter implements FileFilter {

@@ -35,7 +35,7 @@ import java.util.Arrays;
 import org.xml.sax.Attributes;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Abstraction of an activity in manifest
  */
 public class Activity extends Component {

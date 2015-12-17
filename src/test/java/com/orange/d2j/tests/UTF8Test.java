@@ -36,7 +36,7 @@ import org.junit.runners.Parameterized.Parameters;
 import com.orange.d2j.DalvikValueReader;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Test the reading of UTF8 modified strings. 
  */
 

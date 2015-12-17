@@ -32,7 +32,7 @@ import com.orange.d2j.DalvikValueReader;
 
 /**
  * Tests on the decoding of LEB128 values, signed or not.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class LEB128ReaderTest {

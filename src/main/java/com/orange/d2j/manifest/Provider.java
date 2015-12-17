@@ -35,7 +35,7 @@ import java.util.Arrays;
 import org.xml.sax.Attributes;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Abstraction of a content provider in the manifest.
  */
 public class Provider extends Component {

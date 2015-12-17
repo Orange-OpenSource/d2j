@@ -54,11 +54,11 @@ import org.xml.sax.helpers.DefaultHandler;
 
 /**
  * Parser for a compiled XML resource file.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 /**
- * @author piac6784
+ * @author Pierre Cregut
  */
 public class DalvikResource implements XMLReader, Locator {
 
@@ -146,7 +146,7 @@ public class DalvikResource implements XMLReader, Locator {
     /**
      * A style span in an Android resource.
      * 
-     * @author piac6784
+     * @author Pierre Cregut
      */
     public static class StyleSpan {
 
@@ -714,7 +714,6 @@ public class DalvikResource implements XMLReader, Locator {
 
         String filename = (args.length == 0) ? new File(System.getProperty("user.home"),
                 "AndroidManifest.xml").getAbsolutePath() : args[0];
-        // filename = "/home/piac6784/resources.arsc";
         if (filename.endsWith(".apk")) {
 
         } else {

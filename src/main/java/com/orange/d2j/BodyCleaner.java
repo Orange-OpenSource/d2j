@@ -43,7 +43,7 @@ import soot.ValueBox;
 import soot.jimple.toolkits.typing.fast.BottomType;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * 
  * This class cleans up a generated body after typing. It removes dead registers with
  * type bottom_type. If those registers are used, this corresponds to dead code that has

@@ -59,7 +59,7 @@ import soot.jimple.NullConstant;
 
 /**
  * This class handles the typing of a method body.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class DvkTyper {
@@ -142,7 +142,7 @@ public class DvkTyper {
 	 * This represents a type constraints between two values contained in a box.
 	 * It means they are in the same category : not less, not more, but it is still
 	 * oriented because of array types.
-	 * @author piac6784
+	 * @author Pierre Cregut
 	 *
 	 */
 	static class DeferedTypeConstraint {

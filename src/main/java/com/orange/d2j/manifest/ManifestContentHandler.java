@@ -46,11 +46,11 @@ import org.xml.sax.helpers.DefaultHandler;
 /**
  * This class analyse the contents of the manifest in order to isolate entry points in 
  * the classes.dex file.
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 /**
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class ManifestContentHandler extends  DefaultHandler {

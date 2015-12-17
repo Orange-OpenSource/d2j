@@ -36,7 +36,7 @@ import soot.Type;
 
 /**
  * Method prototype
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class MethodProto {

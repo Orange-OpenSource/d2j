@@ -138,7 +138,7 @@ import soot.util.dot.DotGraph;
  * Parse the code of a method body. It also infers types of locals and maintains
  * the list of traps.
  * 
- * @author piac6784
+ * @author Pierre Cregut
  */
 public class MethodBuilder {
 

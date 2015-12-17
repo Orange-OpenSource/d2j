@@ -38,7 +38,7 @@ import java.util.Map;
 import org.xml.sax.Attributes;
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Abstraction of a component in the manifest
  */
 public class Component {

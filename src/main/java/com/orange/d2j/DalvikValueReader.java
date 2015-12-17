@@ -36,7 +36,7 @@ import java.util.Arrays;
 
 /**
  * Reads the different kinds of primitive Dalvik values from an encapsulated stream
- * @author piac6784
+ * @author Pierre Cregut
  *
  */
 public class DalvikValueReader {

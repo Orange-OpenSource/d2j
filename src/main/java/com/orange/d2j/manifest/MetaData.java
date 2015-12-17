@@ -31,7 +31,7 @@ package com.orange.d2j.manifest;
  */
 
 /**
- * @author piac6784
+ * @author Pierre Cregut
  * Meta Data Value.
  */
 public class MetaData {
