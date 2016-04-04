@@ -1551,7 +1551,7 @@ public class MethodBuilder {
             return null;
         }
         switch (selector) {
-            case 0:
+            case 0: // Virtual
                 Value base = argList.get(0);
                 argList.remove(0);
 
@@ -1563,23 +1563,17 @@ public class MethodBuilder {
                             sootMethodref));
                 }
                 break;
-            case 1:
-                base = argList.get(0);
-
-                argList.remove(0);
-                ie = new JSpecialInvokeExpr((Local) base, sootMethodref, pruneWideArgs(argList,
-                        sootMethodref));
-                break;
-            case 2:
+            case 1: // Super 
+            case 2: // Direct
                 base = argList.get(0);
                 argList.remove(0);
                 ie = new JSpecialInvokeExpr((Local) base, sootMethodref, pruneWideArgs(argList,
                         sootMethodref));
                 break;
-            case 3:
+            case 3: // Static
                 ie = new JStaticInvokeExpr(sootMethodref, pruneWideArgs(argList, sootMethodref));
                 break;
-            case 4:
+            case 4: // Interface
                 base = argList.get(0);
                 argList.remove(0);
                 List<Value> params = pruneWideArgs(argList, sootMethodref);
