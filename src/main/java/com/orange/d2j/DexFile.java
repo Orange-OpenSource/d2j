@@ -121,6 +121,8 @@ public class DexFile extends BasicDexFile {
      */
     public final static int NO_INDEX = 0xFFFFFFFF;
 
+    private final static Constant[] NO_CONSTANTS = {};
+
     private final Scene scene = Scene.v();
 
     /**
@@ -880,7 +882,7 @@ public class DexFile extends BasicDexFile {
      */
     private Constant[] parse_static_values(int offset) {
         if (offset == 0)
-            return null;
+            return NO_CONSTANTS;
         int save = reader.getPos();
         reader.seek(offset);
         int size = (int) reader.uleb128();
@@ -953,7 +955,7 @@ public class DexFile extends BasicDexFile {
         int virtual_methods_size = (int) reader.uleb128();
         int idx = 0;
         int flags, code_off;
-        int stat_val_len = (staticValues == null) ? -1 : staticValues.length;
+        int stat_val_len = staticValues.length;
         for (int i = 0; i < static_fields_size; i++) {
             idx += reader.uleb128();
             SootField field = fields[idx];
