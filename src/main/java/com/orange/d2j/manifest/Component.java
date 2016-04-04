@@ -49,6 +49,8 @@ public class Component {
 	private static final String ATT_PERMISSION = "permission";
 	private static final String ATT_ENABLED = "enabled";
 	private static final String ATT_EXPORTED = "exported";
+
+	private static final String [] NO_STRING = {};
 	
 	protected List <Filter> filters = new ArrayList<Filter>();
 	protected Map<String, MetaData> metaData = new HashMap<String,MetaData>(); 
@@ -132,7 +134,7 @@ public class Component {
 	 * @return null if null otherwise the array.
 	 */
 	static String[] arrayOfString(String value) {
-		if (value == null) return null;
+		if (value == null) return NO_STRING;
 		return value.split(",");
 	}
 
