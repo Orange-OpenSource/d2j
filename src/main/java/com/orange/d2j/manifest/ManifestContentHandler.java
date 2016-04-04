@@ -97,7 +97,6 @@ public class ManifestContentHandler extends  DefaultHandler {
 	private int minSdk = -1;
 	private int maxSdk = -1;
 	private int targetSdk = -1;
-	private Locator locator;
 	private Set<String> usedPermissions = new HashSet<String>();
 	private Set<String> requiredLibraries = new HashSet<String>();
 	private Set<String> optionalLibraries = new HashSet<String>();
@@ -167,8 +166,7 @@ public class ManifestContentHandler extends  DefaultHandler {
 		} else if (name.equals(RECEIVER)) {
 			current_component = null;
 		} else if (name.equals(INTENT_FILTER)) {
-			if (current_component == null) System.err.println("AT " + locator.getLineNumber());
-			else current_component.add(current_filter);
+			current_component.add(current_filter);
 			current_filter = null;
 		}
 	}
@@ -282,7 +280,7 @@ public class ManifestContentHandler extends  DefaultHandler {
 		attr = attributes.getValue(ANDROID_URI, ATT_MAX_SDK);
 		if (attr != null) maxSdk = Integer.parseInt(attr);
 		attr = attributes.getValue(ANDROID_URI, ATT_TGT_SDK);
-		if (attr != null) targetSdk = Integer.valueOf(attr);
+		if (attr != null) targetSdk = Integer.parseInt(attr);
 	}
 
 	private void addFeature(Attributes attributes) {
@@ -372,11 +370,6 @@ public class ManifestContentHandler extends  DefaultHandler {
 		configurations.add(new AndroidConfiguration(req5Way, reqHardKB, kbType, navType, touchscreenType));
 	}
 
-	 @Override
-	public void setDocumentLocator(Locator locator) {
-		 this.locator = locator;
-	}
-	 
 	/**
 	 * List of activities published by the application
 	 * @return
