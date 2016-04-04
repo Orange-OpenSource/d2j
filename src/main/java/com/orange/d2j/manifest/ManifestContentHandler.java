@@ -245,7 +245,7 @@ public class ManifestContentHandler extends  DefaultHandler {
 		} else if (name.equals(INTENT_FILTER)) {
 			current_filter = new Filter();
 			String attr = attributes.getValue(ANDROID_URI, ATT_PRIORITY);
-			if (attr != null) current_filter.priority = Integer.valueOf(attr);
+			if (attr != null) current_filter.priority = Integer.parseInt(attr);
 				
 		} else if (name.equals(META_DATA)) {
 			String keyMetaData = attributes.getValue(ANDROID_URI, ATT_NAME);
@@ -278,9 +278,9 @@ public class ManifestContentHandler extends  DefaultHandler {
 
 	private void setSdkRequirements(Attributes attributes) {
 		String attr = attributes.getValue(ANDROID_URI, ATT_MIN_SDK);
-		if (attr != null) minSdk = Integer.valueOf(attr);
+		if (attr != null) minSdk = Integer.parseInt(attr);
 		attr = attributes.getValue(ANDROID_URI, ATT_MAX_SDK);
-		if (attr != null) maxSdk = Integer.valueOf(attr);
+		if (attr != null) maxSdk = Integer.parseInt(attr);
 		attr = attributes.getValue(ANDROID_URI, ATT_TGT_SDK);
 		if (attr != null) targetSdk = Integer.valueOf(attr);
 	}
